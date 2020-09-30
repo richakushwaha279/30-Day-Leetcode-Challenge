@@ -12,6 +12,7 @@ public:
         vector<int> curr_freq(26, 0);
         int n1 = (int)s1.size();
         int n2 = (int)s2.size();
+        
         if(n1 > n2)
             return false;
         for(int i=0; i<n1; i++)
@@ -20,6 +21,7 @@ public:
         for(int i=0; i<n1; i++)
             curr_freq[s2[i]-'a']++;
         
+        #compares two vectors and returns true if they are same false otherwise
         if(compare(freq, curr_freq))
             return true;
         
