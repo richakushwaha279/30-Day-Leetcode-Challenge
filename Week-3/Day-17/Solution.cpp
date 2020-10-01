@@ -9,16 +9,19 @@ public:
     }
     vector<int> findAnagrams(string s, string p) {
         vector<int> freq(26, 0);
+        # variable declaration done at the top
+        vector<int> ans;
+        vector<int> curr_freq(26, 0);
         int p_size = p.length();
         int s_size = s.length();
         cout<<p_size<<" "<<s_size;
         for(int i=0; i<p_size; i++)
             freq[p[i]-'a']++;
         
-        vector<int> ans;
+       
         if(s_size < p_size)
             return {};
-        vector<int> curr_freq(26, 0);
+        
         for(int i=0; i<p_size; i++)
         {
             curr_freq[s[i]-'a']++;
