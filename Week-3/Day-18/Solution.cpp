@@ -39,3 +39,15 @@ public:
         return false;
     }
 };
+
+int main()
+{
+    Solution obj1 = Solution.new();
+    string a = 'dummystring';
+    string b = 'dumb';
+    bool t = obj1.checkInclusion(a,b);
+    cout<<"returned value "<<t;
+    
+    
+    return 0;
+}
