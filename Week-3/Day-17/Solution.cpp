@@ -41,3 +41,16 @@ public:
         return ans;
     }
 };
+
+int main()
+{
+    string a = "teacher";
+    string b = "cheat";
+    Solution obj1 = Solution.new();   
+    vector<int> temp = obj1.findAnagrams(a,b);
+    
+    for(auto i:temp)
+        cout<<i<<" ";
+    
+    return 0;
+}
