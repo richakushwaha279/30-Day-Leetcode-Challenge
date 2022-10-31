@@ -49,8 +49,8 @@ int main()
     Solution obj1 = Solution.new();   
     vector<int> temp = obj1.findAnagrams(a,b);
     
-    for(auto i:temp)
-        cout<<i<<" "; #print
+    for(auto i:temp) #iterate
+        cout<<i<<" "; 
     
     return 0;
 }
