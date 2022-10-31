@@ -50,7 +50,7 @@ int main()
     vector<int> temp = obj1.findAnagrams(a,b);
     
     for(auto i:temp)
-        cout<<i<<" ";
+        cout<<i<<" "; #print
     
     return 0;
 }
